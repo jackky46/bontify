@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+
+@font-face {
+  font-family: "receipt";
+  src: url("Merchant_Copy.ttf") format("truetype");
+}
+
+html,
+body {
+  background-color: #0d0b10;
+  color: #d9d9d9;
+  font-size: 0.75rem;
+}
+
+:root {
+  --spotify-button: 141.2, 73%;
+  --lastfm-button: 0, 0%;
+  --apple-button: 356, 94%;
+}
+
+h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 3.3rem;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.info {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  background-color: #131016;
+  padding: 15px;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+
+.info a {
+  text-decoration: none;
+}
+
+.period {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.login-btn {
+  display: flex;
+}
+
+.login-btn img {
+  height: 35px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-btn {
+  margin: 2vh auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 2vh 5vh;
+  background-color: hsl(var(--spotify-button), 42%);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Geneva, Tahoma, sans-serif;
+  transition: background-color 0.2s;
+  width: 340px;
+  min-width: max-content;
+}
+
+#downloadBox {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #131016;
+  width: 240px;
+}
+
+#downloadBox p {
+  font-family: Helvetica, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.login-btn span {
+  margin: auto;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.login-btn:hover {
+  background-color: hsl(var(--spotify-button), 45%);
+}
+
+.login-btn:focus {
+  text-decoration: none;
+  color: white;
+  background-color: hsl(var(--spotify-button), 40%);
+}
+
+.apple {
+  background-color: #f94c57;
+}
+
+.apple:hover {
+  background-color: hsl(var(--apple-button), 70%);
+}
+
+.apple:focus {
+  background-color: hsl(var(--apple-button), 65%);
+}
+
+.lastfm {
+  background-color: black;
+}
+
+.lastfm:hover {
+  background-color: hsl(var(--lastfm-button), 8%);
+}
+
+.lastfm:focus {
+  background-color: hsl(var(--lastfm-button), 2%);
+}
+
+.time-btn {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 1vh 5vh;
+  background-color: #0056ff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Geneva, Tahoma, sans-serif;
+  margin: 0vh 1vh;
+  width: auto;
+}
+
+.login-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#options,
+#appleoption {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#loggedin,
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loggedin h1 {
+  margin-top: 50px;
+}
+
+.date {
+  margin: 0vh;
+}
+
+.tracks {
+  margin: 5px 0vh;
+}
+
+#receipt {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 25px auto;
+}
+
+.username-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.username-input * {
+  margin: 2%;
+}
+
+#btntheme {
+  margin-top: 5px;
+}
+
+/* #btntheme1,
+#btntheme2,
+#btntheme3 {
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: hsl(var(--spotify-button), 42%);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Geneva, Tahoma, sans-serif;
+  transition: background-color 0.2s;
+  width: 140px;
+  min-width: max-content;
+}
+
+#query1,
+#query2,
+#query3 {
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: hsl(var(--spotify-button), 42%);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Geneva, Tahoma, sans-serif;
+  transition: background-color 0.2s;
+  width: 140px;
+  min-width: max-content;
+}
+
+#short_term,
+#medium_term,
+#long_term {
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: hsl(var(--spotify-button), 42%);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Geneva, Tahoma, sans-serif;
+  transition: background-color 0.2s;
+  width: 140px;
+  min-width: max-content;
+} */
+
+.btn-style {
+  width: 200px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-style:hover {
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-style:focus {
+  outline: none;
+}
+
+.btn-style.color {
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+.theme1 {
+  background-image: url("wrinkled-paper-texture-7.jpg");
+  background-position: center;
+  width: 340px;
+  filter: brightness(110%);
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.theme2 {
+  background-image: url("paper2.jpg");
+  background-position: center;
+  width: 340px;
+  filter: brightness(110%);
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.theme3 {
+  background-image: url("paper3.jpg");
+  background-position: center;
+  width: 340px;
+  filter: brightness(110%);
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* .receiptContainer {
+  background-image: url("wrinkled-paper-texture-7.jpg");
+  background-position: center;
+  width: 340px;
+  filter: brightness(110%);
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+} */
+
+.begin {
+  padding-left: 0vh;
+}
+
+#download {
+  margin-top: 2vh;
+}
+
+p,
+table,
+.date {
+  font-family: "receipt", "Courier New", Courier, monospace;
+  font-size: 2.1rem;
+  line-height: 2rem;
+}
+/* .dater {
+  font-family: "receipt", "Courier New", Courier, monospace;
+  font-size: 2.1rem;
+  line-height: 2rem;
+} */
+
+#login p {
+  font-size: 1.5rem;
+}
+
+table {
+  border: none;
+}
+
+.total-counts {
+  border-top: 1px dashed;
+}
+
+.total-counts-end {
+  border-bottom: 1px dashed;
+}
+
+thead {
+  border-top: 1px dashed;
+  border-bottom: 1px dashed;
+}
+
+td {
+  padding: 2px 10px;
+  vertical-align: top;
+}
+
+.name {
+  width: 225px;
+  overflow: auto;
+}
+
+.length {
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.website {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-transform: lowercase;
+}
+
+.thanks {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.thanks img {
+  width: 70%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  #loggedin,
+  #login {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #options {
+    flex-direction: column;
+  }
+
+  #loggedin,
+  #login {
+    width: 100%;
+  }
+
+  .time-btn {
+    margin: 1vh auto;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
